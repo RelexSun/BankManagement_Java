@@ -44,7 +44,7 @@ public class SaveAccount implements Account{
 
     public void deposit(double amount) {
         if (this.balance >= 200) {
-            this.balance *= this.rate;
+            this.balance += this.balance*this.rate;
         }
         this.balance += amount;
         System.out.println("Deposit Successfully!");
